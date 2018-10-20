@@ -1,0 +1,70 @@
+/*
+    Created on : Apr 18, 2017, 10:52:40 PM
+    Author     : Shubham Thakare
+*/
+body
+{
+    background: url('../../images/logo_background_light.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container
+{
+    height: 95%;
+    width: 80%;
+    position: absolute;
+    top: 2.5%;
+    left: 10%;
+    font-size: 36px;
+    text-align: center;
+}
+#input-text
+{
+    width: 280px;
+}
+#sub-btn
+{
+    font-size: 16px;
+    background: #009966;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 1px 1px 1px #000;
+}
+#person-pin
+{
+    position: relative;
+    left: 31px;
+    top: 9px;
+    font-size: 28px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 3px;
+}
+.form-panel a
+{
+    font-size: 14px;
+    text-align: left;
+}
+
+thead,td
+{
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(0,0,0,0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(0,0,0,0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(0,0,0,0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(0,0,0,0.5);
+}

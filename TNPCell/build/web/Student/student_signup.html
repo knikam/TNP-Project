@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>RCPIT : Personal Details</title>        
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="../css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- Compiled and minified JavaScript -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/materialize.min.js"></script>
+      
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container" style="text-align: left;">
+            <span><b>R. C. Patel Institute of Technology, Shirpur</b></span><br/>
+            <nav class="nav-extended">
+                <div class="nav-content">
+                    <ul class="tabs tabs-transparent">
+                        <li class="tab"><a class="active" href="#personal_details">Personal Details</a></li>
+                        <li class="tab disabled"><a href="#academic_details">Acdemic Details</a></li>
+                        <li class="tab right"><a onclick="window.location='../Logout/logoutValidation.jsp';">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="personal_details">
+                <div class="form-panel" style="text-align: left;">
+                <form method="POST" action="../save_personal_details">
+                    <span style="font-size: 12px;" class="red-text">&nbsp;&nbsp;All fields are compulsary</span><br/>
+                    <table>
+                        <tr>
+                            <td><span style="font-size: 18px;">Name of Student &nbsp;&nbsp;&nbsp;</span></td><td><input type="text" class="validate" placeholder="First Name" id="input-text" name="s_first_name" required></td>
+                            <td><input type="text" class="validate" placeholder="Middle Name" id="input-text" name="s_middle_name" required></td>
+                            <td><input type="text" class="validate" placeholder="last Name" id="input-text" name="s_last_name" required><br/></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 18px;">Name of<br>Father/Husband &nbsp;&nbsp;&nbsp;</span></td><td><input type="text" class="validate" placeholder="First Name" id="input-text" name="f_first_name" required></td>
+                            <td><input type="text" class="validate" placeholder="Middle Name" id="input-text" name="f_middle_name" required></td>
+                            <td><input type="text" class="validate" placeholder="last Name" id="input-text" name="f_last_name" required><br/></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 18px;">Date of Birth &nbsp;&nbsp;&nbsp;</span></td><td><input type="date" class="datepicker" placeholder="DD/MM/YYYY" name="dob" required></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 18px;">Address &nbsp;&nbsp;&nbsp;</span></td><td><input type="text" class="validate" placeholder="Line 1" id="input-text" name="line1" required></td>
+                            <td><input type="text" class="validate" placeholder="Line 2" id="input-text" name="line2"></td>
+                            <td><input type="text" class="validate" placeholder="City/Village" id="input-text" name="city" required></td>
+                        </tr>
+                        <tr>
+                            <td></td><td><input type="text" class="validate" placeholder="Taluka" id="input-text" name="taluka" required></td>
+                            <td><input type="text" class="validate" placeholder="District" id="input-text" name="district" required></td>
+                            <td><input type="text" class="validate" placeholder="State" id="input-text" name="state" required></td>
+                        </tr>
+                        <tr>
+                            <td></td><td><input type="text" class="validate" placeholder="Pin Code" id="input-text" name="pin" required></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 18px;">Mobile &nbsp;&nbsp;&nbsp;</span></td>
+                            <td><input type="tel" class="validate" placeholder="Self Mobile" id="input-text" name="s_mobile" required></td>
+                            <td><input type="tel" class="validate" placeholder="Parent Mobile" id="input-text" name="p_mobile" required></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 18px;">Email &nbsp;&nbsp;&nbsp;</span></td>
+                            <td><input type="email" class="validate email" placeholder="Email Address" id="input-text" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-size: 18px;">Password &nbsp;&nbsp;&nbsp;</span></td>
+                            <td><input type="password" class="validate email" placeholder="Password" id="input-text" name="password" required></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td><td><center><input type="submit" value="Save and Continue" id="sub-btn" onsubmit="return valid();"/></center></td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 18
+  });
+  
+</script>
